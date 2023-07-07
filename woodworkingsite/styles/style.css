@@ -152,6 +152,11 @@ p:nth-of-type(3) {
     margin: auto;
     text-align: center;
 }
+.card-img {
+    object-fit: cover;
+    height: 400px;
+    width: 100 px;
+}
 .item-1, .item-2, .item-3, .item-4, .item-5, .item-6 {
     box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 50px;
