@@ -12,7 +12,9 @@ body {
     font-size: 22px;
     margin: 0;
     padding: 0;
-}
+    max-width: 1600px; 
+    margin: 0 auto; }
+
 /* Header */
 header {
     background-color: #3d3d3d;
@@ -25,7 +27,7 @@ header {
 }
 nav {   
     display: flex;
-    background-color: 3d3d3d;
+    background-color:#3d3d3d;
     flex-direction: row; 
     justify-content: space-evenly;
     align-items: center;
@@ -36,7 +38,6 @@ nav a {
     background-color: #3d3d3d;
     font-family: 'Anton';
     font-size: 1.25em;
-    font-style: bold;
     text-decoration:none;
     color: #808080;
     padding: 20px;
@@ -87,9 +88,7 @@ h4 {
 }
 
 /* Main */
-main {
-    text-align: center;
-}
+
 .about-us {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
@@ -99,7 +98,7 @@ h2 {
     text-align: center;
     color: #3d3d3d;
     font-size: 80px;
-    font-style: bold;
+    
 }
 .couple-img, .family-img, .Brian-Caleb {
     box-sizing: border-box;
@@ -124,21 +123,21 @@ h2 {
     grid-row: 4/5;
     float: left;
 }
-p:nth-of-type(1) {
+p.couple-msg {
     text-align: justify;
     grid-column: 4/10;
     grid-row: 2/3;
     font-size: 1.5em;
     margin: 10px;   
 }
-p:nth-of-type(2) {
+p.family-msg {
     text-align: justify;
     grid-column:2/8;
     grid-row: 3/4;
     font-size: 1.5em;
     margin: 10px;
 }
-p:nth-of-type(3) {
+p.Brian-msg {
     text-align: justify;
     grid-column: 4/10;
     grid-row: 4/5;
@@ -146,6 +145,8 @@ p:nth-of-type(3) {
     margin: 10px;
 }
 /*Shop Page*/
+
+
 .shop-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -155,13 +156,12 @@ p:nth-of-type(3) {
 .card-img {
     object-fit: cover;
     height: 400px;
-    width: 100 px;
 }
 .item-1, .item-2, .item-3, .item-4, .item-5, .item-6 {
     box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 50px;
     height: 1000px;
-    width: 500px;
+    width: 400px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;  
@@ -219,6 +219,160 @@ h5 {
     font-size: 36px;
     margin: 75px;
 }
+/*Blog*/
+h1 {
+    text-align: center;
+    color:#22566E;
+}
+.blog-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr 2fr 1fr;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+}
+.dry-fit-image, .side-painted-image, .front-painted-image, .hubcap-painted-image, .finished-bed-image {
+    box-sizing: border-box;
+    color:#3d3d3d;
+    height: 100%;
+    width: 100%;
+    border: solid;
+    overflow: auto;
+    object-fit:initial;
+    height: 350px;
+    width: 450px;
+}
+.dry-fit-image {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin: 10px;
+}
+p.dry-fit-msg {
+    grid-column: 3/7;
+    grid-row: 2/3;
+    color:#22566E;
+    text-align: justify;
+    font-size: 28px;
+}
+.side-painted-image {
+    grid-column: 6/7;
+    grid-row: 4/5;
+    float: right;
+    margin: 10px;
+}
+p.side-painted-msg {
+    grid-column: 2/6;
+    grid-row: 4/5;
+    color:#22566E;
+    text-align: justify;
+    font-size: 28px;
+}
+.front-painted-image {
+    grid-column: 2/3;
+    grid-row: 6/7;
+    float: left;
+    margin: 10px;
+}
+p.front-painted-msg {
+    grid-column: 3/7;
+    grid-row: 6/7;
+    color:#22566E;
+    text-align: justify;
+    font-size: 28px;
+}
+.hubcap-painted-image {
+    grid-column: 6/7;
+    grid-row: 8/9;
+    float: right;
+    margin: 10px;
+}
+p.hubcap-painted-msg {
+    grid-column: 2/6;
+    grid-row: 8/9;
+    color:#22566E;
+    text-align: justify;
+    font-size: 28px;
+}
+.finished-bed-image {
+    grid-column: 2/3;
+    grid-row:10/11;
+    float: left;
+    margin: 10px;
+}
+p.finished-bed-msg {
+    grid-column: 3/7;
+    grid-row: 10/11;
+    color:#22566E;
+    text-align: justify;
+    font-size: 28px;
+}
+.train-bed, .castle-bed {
+    box-sizing: border-box;
+    color:#3d3d3d;
+    height: 100%;
+    width: 100%;
+    border: solid;
+    object-fit:initial;
+    height: 200px;
+    width: 300px;
+    grid-row: 14/15;
+}
+p.extra-beds {
+    grid-row: 12/13;
+    grid-column:3/6;
+    width: 100%;
+    color:#22566E;
+}
+.train-bed {
+    grid-column: 3/4;
+}
+.castle-bed {
+    grid-column: 5/6;
+}
+/*Contact Us*/
+h6 {
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+    color:#22566E;
+}
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 6px; 
+    resize: vertical; 
+    color:#22566E;
+}
+label {
+    color:#22566E;
+}
+
+  input[type=submit] {
+    background-color:#307a9c;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: center;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #3d3d3d;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: whitesmoke;
+    padding: 20px;
+  }
+
 /*Footer*/
 footer {
     background-color: #3d3d3d;
