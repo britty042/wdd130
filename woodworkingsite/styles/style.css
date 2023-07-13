@@ -12,8 +12,10 @@ body {
     font-size: 22px;
     margin: 0;
     padding: 0;
+}
+#content {
     max-width: 1600px; 
-    margin: 0 auto; }
+    margin: 0auto; }
 
 /* Header */
 header {
@@ -152,6 +154,7 @@ p.Brian-msg {
     grid-template-columns: repeat(3, 1fr);
     margin: auto;
     text-align: center;
+    width: 100%;
 }
 .card-img {
     object-fit: cover;
@@ -230,6 +233,7 @@ h1 {
     text-align: center;
     margin: auto;
     align-items: center;
+    width: 100%;
 }
 .dry-fit-image, .side-painted-image, .front-painted-image, .hubcap-painted-image, .finished-bed-image {
     box-sizing: border-box;
