@@ -15,7 +15,7 @@ body {
 }
 #content {
     max-width: 1600px; 
-    margin: 0auto; }
+    margin: 0 auto; }
 
 /* Header */
 header {
