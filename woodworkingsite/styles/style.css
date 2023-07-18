@@ -164,7 +164,7 @@ p.Brian-msg {
     box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 50px;
     height: 1000px;
-    width: 400px;
+    max-width: 400px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;  
@@ -243,8 +243,8 @@ h1 {
     border: solid;
     overflow: auto;
     object-fit:initial;
-    height: 350px;
-    width: 450px;
+    max-height: 350px;
+    max-width: 450px;
 }
 .dry-fit-image {
     grid-column: 2/3;
