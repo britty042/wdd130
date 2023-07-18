@@ -258,6 +258,7 @@ p.dry-fit-msg {
     color:#22566E;
     text-align: justify;
     font-size: 28px;
+    margin-left: 20px;
 }
 .side-painted-image {
     grid-column: 6/7;
@@ -284,6 +285,7 @@ p.front-painted-msg {
     color:#22566E;
     text-align: justify;
     font-size: 28px;
+    margin-left: 20px;
 }
 .hubcap-painted-image {
     grid-column: 6/7;
@@ -310,6 +312,7 @@ p.finished-bed-msg {
     color:#22566E;
     text-align: justify;
     font-size: 28px;
+    margin-left: 20px;
 }
 .train-bed, .castle-bed {
     box-sizing: border-box;
